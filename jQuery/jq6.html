@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page5</title>
+  <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" class="form-control" id="last-name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" class="form-control" id="phone">
+        </div>
+        <div class="form-group">
+          <button onclick="registerUser()" class="btn btn-success">Register</button>
+          <button class="btn btn-danger" onclick="clearInputValues()">Cancel</button>
+        </div>
+      </div>
+  
+      <div class="col-md-6">
+        <div id="result"></div>
+      </div>
+    </div>
+   
+    
+  </div>
+  
+  <script src="jquery-3.5.1.min.js"></script>
+  <script>
+
+    function registerUser() {
+      // get the values entered by user
+      const firstName = $('#first-name').val()
+      const lastName = $('#last-name').val()
+      const email = $('#email').val()
+      const phone = $('#phone').val()
+
+      // print the result in result div
+      // document.getElementById('result').innerHTML = ""
+      $('#result').html(`
+        <div><strong>First Name: </strong>${firstName}</div>
+        <div><strong>Last Name: </strong>${lastName}</div>
+        <div><strong>Email: </strong>${email}</div>
+        <div><strong>Phone number: </strong>${phone}</div>
+      `)
+    }
+
+    function clearInputValues() {
+      $('#first-name').val('')
+      $('#last-name').val('')
+      $('#email').val('')
+      $('#phone').val('')
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle" id="circle"></div>
+    <br>
+    <br>
+    <button onclick="Hide()">Hide</button>
+    <button onclick="unhide()">show</button>
+    <button onclick="slideup()">slideup</button>
+    <button onclick="fade()">Fade</button>
+    <button onclick="animatecircle()">animate</button>
+    <button onclick="stop()">stop</button>
+    <br>
+    <br>
+    <p onclick="changecolor()">This is a paragraph</p>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        function Hide()
+        {
+            $(".circle").hide();
+        }
+        function unhide(){
+            $(".circle").show();
+        }
+        function slideup()
+        {
+            $(".circle").slideUp();
+        }
+        function fade(){
+            $(".circle").fadeTo(0.75);
+        }
+        function animatecircle()
+        {
+            var x={
+                'height':'100px',
+                'width' :'100px',
+                'border-radius':'50px',
+                
+                 }
+               
+            $(".circle").animate(x,1000)
+           
+
+            document.getElementById('circle').style.backgroundColor='red';
+        }
+
+        function stop()
+        {
+            $(".circle").stop();
+        }
+        function changecolor()
+        {
+            $("p").css("color","pink");
+            $("p").css("background-color","red");
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

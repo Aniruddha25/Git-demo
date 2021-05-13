@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .col-md-3{
+            border:solid blue;
+            border-radius: 5px;
+            margin: 10px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body onload="loaditems()">
+    <h1 align="center">ITEMS</h1>
+    <br>
+    <br>
+    <div class="container">
+    <div class="items" id="items"></div>
+</div>
+
+
+<script src="jquery-3.5.1.min.js"></script>
+    <script>
+        function loaditems()
+        {
+            const items = [{"title":"product1",
+            "Description":"This is Nice product",
+            "price":100
+
+            
+            },
+            {"title":"product2",
+            "Description":"This is cool product",
+            "price":200
+
+            
+            },
+            {"title":"product3",
+            "Description":"This is awesome product",
+            "price":300
+
+            
+            }
+
+            
+            ]
+            let itemlist ='';
+            for(index=0;index<items.length;index++)
+            { 
+                 item = items[index];
+                 
+                 itemlist += `
+                 <div class="col-md-3">
+                 <div class="title">${item["title"]}</div>
+                 <div class="description">${item["Description"]}</div>
+                 <div class="price">${item["price"]}</div>
+
+                 </div>
+
+
+
+                 `
+
+                 
+
+            }
+            $("#items").html(itemlist);
+
+        $('#items').css('color','blue');
+
+        }
+    </script>
+    
+</body>
+</html>

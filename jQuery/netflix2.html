@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="indexheader.css">
+  <link rel="stylesheet" href="index_footer.css">
+  <link rel="stylesheet" href="index_body.css">
+  <style>
+  
+     
+  </style>
+</head>
+<body onload="loadMovieLists()">
+    <!-- header: navbar -->
+  <div class="header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">TV Shows</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Latest</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">My List</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- main contents -->
+  <div class="main-contents">
+    <div id="movies">
+
+    </div>
+
+
+    
+
+
+    
+  
+
+
+  </div>
+  <!-- footer -->
+  <div class="footer">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <img class="social-logo" src="facebook.png" alt="">
+          <img class="social-logo" src="twitter.jpeg" alt="">
+          <img class="social-logo" src="ytube.png" alt="">
+          <img class="social-logo" src="insta.png" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">Audio and subtitles</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">Audio and subtitles</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">Audio and subtitles</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">Audio and subtitles</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="btn-service-code">Service Code</button>
+      <div class="copyright">copyright ....</div>
+    </div>
+
+  </div>
+
+  
+ 
+  
+    
+  
+
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="bootstrap-4.5.2-dist/js/bootstrap.js"></script>
+  <script>
+      function loadMovieLists() {
+      const movieLists = [
+        {
+          "title": "My List >",
+          "items": [
+            {
+              "thumbnail": "images/thumbnails/sacred_games.jpg",
+              "title": "Sacred Games",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action, Thriller",
+            },
+            {
+              "thumbnail": "images/thumbnails/boss_baby.jpg",
+              "title": "Boss Baby",
+              "season": "Season 1, Season 2",
+              "age": "4+",
+              "genre": "Animation",
+            },
+            {
+              "thumbnail": "images/thumbnails/sniper.png",
+              "title": "Sniper",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action",
+            }
+          ]
+        },
+        {
+          "title": "Popular on Netflix",
+          "items": [
+            {
+              "thumbnail": "https://occ-0-4230-2186.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXtNypabGOdPQGIn8jSay-cOY6Ebo0dLQfXGVHZ1BpRU3N34T-_r8f6PDjXhfAbow2cLEOjhNjZz8G-IsfQ56nYIm60L3l5DMNwe1HTGyxStTqfKdKKFVxOsrFTgrbf4U72qbRU0b4ugeg1G0NZCW5S0vkoXeeJ5ZCjKiZbCwYpqabBjk9Y3pRg.jpg?r=1f8",
+              "title": "Gunjan Saxena",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action, Thriller"
+            },
+            {
+              "thumbnail": "https://occ-0-4230-2186.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWVSvW3zwTvGYZMPNJQtBB2Jtd56zzwlSzjnp1zvcV6R1aqZHaR2BjW2sM4trhPZHKo9wU9nw7Onvp4FZiAKmAnXpHGCxpfrXCx1iusjOqHGNhTBU1UMEilqbWk2Tp_rIOj5gZ1oRYwiSQvS3rlmK4Y-uTzrzVuggHn00zZrC3mH5wK3eIBlFJ0.jpg?r=2ba",
+              "title": "Project Power",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action, Thriller"
+            }
+          ]
+        },
+        {
+          "title": "Trending Now",
+          "items": [
+            {
+              "thumbnail": "SGames.png",
+              "title": "Sacred Games",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action, Thriller",
+            },
+            {
+              "thumbnail": "bbaby.jpg",
+              "title": "Boss Baby",
+              "season": "Season 1, Season 2",
+              "age": "4+",
+              "genre": "Animation",
+            },
+            {
+              "thumbnail": "sniper.png",
+              "title": "Sniper",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action",
+            }
+          ]
+        },
+        {
+          "title": "Golden Globe Award Wining TV Shows",
+          "items": [
+            {
+                "thumbnail": "SGames.png",
+              "title": "Sacred Games",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action, Thriller",
+                
+             
+            },
+            {
+              "thumbnail": "bbaby.jpg",
+              "title": "Boss Baby",
+              "season": "Season 1, Season 2",
+              "age": "4+",
+              "genre": "Animation",
+            },
+            {
+              "thumbnail": "sniper.png",
+              "title": "Sniper",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action",
+            }
+          ]
+        },
+        {
+          "title": "Political TV Shows",
+          "items": [
+            {
+              "thumbnail": "SGames.png",
+              "title": "Sacred Games",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action, Thriller",
+            },
+            {
+              "thumbnail": "bbaby.jpg",
+              "title": "Boss Baby",
+              "season": "Season 1, Season 2",
+              "age": "4+",
+              "genre": "Animation",
+            },
+            {
+              "thumbnail": "sniper.png",
+              "title": "Sniper",
+              "season": "Season 1",
+              "age": "18+",
+              "genre": "Action",
+            }
+          ]
+        }
+      ]
+
+      let items = ''
+      for (let index = 0; index < movieLists.length; index++) {
+        items += `<div class="movie-list">`
+
+        const list = movieLists[index]
+        items += `<div class="movie-slider-type">${list["title"]}</div>`
+
+        const movies = list["items"]
+        items += `<ul class="movie-slider-1">`
+        for (let movieIndex = 0; movieIndex < movies.length; movieIndex ++) {
+          const movie = movies[movieIndex]
+          items += `
+              <li>
+                <div class="movie-slider-item">
+                  <img src="${movie['thumbnail']}" alt="">
+                  <div class="controls">
+                    <button class="btn-control btn-control-1"><img src="voice.png" alt=""></button> 
+                    <button class="btn-control btn-control-2"><img src="thumbsup.png" alt=""></button> 
+                    <button class="btn-control btn-control-3"><img src="thumbsdown.png" alt=""></button> 
+                    <button class="btn-control btn-control-4"><img src="checkmark.png" alt=""></button> 
+
+                    <img class="play" src="play.png" alt="">
+                    <div class="title">${movie['title']}</div>
+                    <div class="age">${movie['age']} <span>${movie['season']}</span></div>
+                    <div class="genre">${movie['genre']}</div>
+
+                  </div>
+                </div>
+              </li>
+
+          `
+          
+        }
+        items += `</ul>`
+        items += `</div>`
+      }
+
+      $('#movies').html(items)
+    }
+    
+    
+
+  </script>
+</body>
+</html>

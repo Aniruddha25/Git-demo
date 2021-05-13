@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>POWER</h1>
+    <div>
+        <label for="number1">Number1</label>
+        <input type="number" id='n1'>
+    </div>
+    <div>
+        <label for="number2">Number2</label>
+        <input type="number" id='n2'>
+    </div>
+    <div>
+        Addition :
+        <p id='result'></p>
+    </div>
+    <button onclick="add()">addition</button>
+    <script>
+        function add()
+        {
+            const n1=document.getElementById('n1').value;
+            const n2=document.getElementById('n2').value;
+            const n3 = parseInt(n1)+parseInt(n2);
+           
+            const result = document.getElementById('result').innerHTML=`Result is : ${n3}`;
+
+        }
+    </script>
+    
+
+    
+</body>
+</html>
